@@ -3,7 +3,7 @@
 const dataLocation = 'data/KPH_Rokan.csv';
 
 // Map's initial center, and zoom level
-const mapCenter = [0.649844, 117.948];
+const mapCenter = [0.652858, 100.618477];
 const mapZoom = 12;
 
 // Marker icon height and width
@@ -11,5 +11,5 @@ const iconHeight = 30;
 const iconWidth = 30;
 
 //Icon for pohon muda and pohon dewasa
-const pohonDewasa =  'logo/pohon_dewasa.svg'
-const pohonMuda = 'logo/tree-5202.svg'
+const pohonDewasa =  'icon/mature_tree.svg'
+const pohonMuda = 'icon/young_tree.svg'
