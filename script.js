@@ -251,7 +251,7 @@ var addMarkers = function(data) {
     groups[g].addTo(map);
   }
   
-  L.control.layers({}, groups, {collapsed: true, position: 'bottomright'}).addTo(map);
+  L.control.layers({}, groups, {collapsed: true, position: 'topright'}).addTo(map);
   //$('.leaflet-control-layers-overlays').prepend('<h3 class="mt0 mb1 f5 black-30">Legend</h3>');
 
   // If name in hash, activate it
