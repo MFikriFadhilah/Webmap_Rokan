@@ -385,8 +385,8 @@ var initMap = function() {
     interactive: true,
     dataVar: 'json_BatasKawasan_Rokan',
     layerName: 'layer_BatasKawasan_Rokan',
-    style: style_bataskawasan,
-    onEachFeature: onEachFeature,
+    style: style_bataskawasan
+  
     //pane: 'pane_PohonAdopsiMinastahura_4'
   });
   map.addLayer(layer_BatasKawasan);
