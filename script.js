@@ -212,6 +212,8 @@ var addMarkers = function(data) {
   for (var i in data) {
     var d = data[i];
 
+   // Check if Latitude and Longitude are not undefined
+   if (d.Latitude && d.Longitude) {
     // Create a slug for URL hash, and add to marker data
     d['slug'] = slugify(d.id);
 
@@ -242,6 +244,7 @@ var addMarkers = function(data) {
 
     if (d.slug === hashName) { activeMarker = m; }
   }
+ }
 
   // Transform each array of markers into layerGroup
   for (var g in groups) {
@@ -265,7 +268,7 @@ var addMarkers = function(data) {
  */
 var loadData = function(loc) {
 
-  Papa.parse(loc, {
+  Papa.parse('https://raw.githubusercontent.com/MFikriFadhilah/Webmap_Rokan/main/data/KPH_Rokan.csv', {
     header: true,
     download: true,
     complete: function(results) {
