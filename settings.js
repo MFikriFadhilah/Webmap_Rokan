@@ -3,7 +3,7 @@
 const dataLocation = 'data/KPH_Rokan.csv';
 
 // Map's initial center, and zoom level
-const mapCenter = [0.865842, 100.300172];
+const mapCenter = [0.692101, 100.348192];
 const mapZoom = 12;
 
 // Marker icon height and width
